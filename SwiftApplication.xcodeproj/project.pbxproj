@@ -35,16 +35,6 @@
 			path = SwiftApplication;
 			sourceTree = "<group>";
 		};
-		0FABDEB92D710CAC00CCD748 /* SwiftApplicationTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftApplicationTests;
-			sourceTree = "<group>";
-		};
-		0FABDEC32D710CAC00CCD748 /* SwiftApplicationUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftApplicationUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				0FABDEA82D710CAA00CCD748 /* SwiftApplication */,
-				0FABDEB92D710CAC00CCD748 /* SwiftApplicationTests */,
-				0FABDEC32D710CAC00CCD748 /* SwiftApplicationUITests */,
 				0FABDEA72D710CAA00CCD748 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				0FABDEB82D710CAC00CCD748 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				0FABDEB92D710CAC00CCD748 /* SwiftApplicationTests */,
-			);
 			name = SwiftApplicationTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				0FABDEC22D710CAC00CCD748 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				0FABDEC32D710CAC00CCD748 /* SwiftApplicationUITests */,
 			);
 			name = SwiftApplicationUITests;
 			packageProductDependencies = (
@@ -396,9 +378,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftApplication/Preview Content\"";
-				DEVELOPMENT_TEAM = L87X74C4F8;
+				DEVELOPMENT_TEAM = 2ML3K8854F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Map App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,9 +408,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftApplication/Preview Content\"";
-				DEVELOPMENT_TEAM = L87X74C4F8;
+				DEVELOPMENT_TEAM = 2ML3K8854F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Map App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
