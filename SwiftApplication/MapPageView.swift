@@ -6,24 +6,41 @@ extension CLLocationCoordinate2D {
         latitude: 45.5,
         longitude: -73.7
     )
-    
-    
 }
 
 
-struct MapPageView: View {
-    let initialPosition: MapCameraPosition = .userLocation(
-           fallback: .camera(
-            MapCamera(centerCoordinate: .montreal, distance: 150_000)
-           ))
-    
-    var body: some View {
-        Map(initialPosition: initialPosition){
-//            MapPolyline(ini)
-        }
-        .mapStyle(.hybrid);
+struct MapViewPage: UIViewRepresentable {
 
-    }}
+    func makeUIView(context: Context) -> MKMapView {
+        
+        let mapView = MKMapView()
+        mapView.mapType = .hybrid
+
+
+        let centerCoordinate = CLLocationCoordinate2D.montreal
+        let distance: CLLocationDistance = 50000 // meters
+
+        let region = MKCoordinateRegion(center: centerCoordinate, latitudinalMeters: distance, longitudinalMeters: distance)
+
+        mapView.setRegion(region, animated: true)
+        mapView.showsUserLocation = true
+
+        return mapView
+    }
+
+    func updateUIView(_ uiView: MKMapView, context: Context) {
+    }
+}
+
+
+
+struct MapPageView: View {
+
+    var body: some View {
+        MapViewPage()
+            .ignoresSafeArea()
+    }
+}
 
 #Preview {
     MapPageView()

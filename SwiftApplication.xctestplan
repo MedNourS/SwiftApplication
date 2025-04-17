@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "ED404CEC-C4CA-4198-B46A-D069157BE4EE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "locationScenario" : {
+      "identifier" : "San Francisco, CA, USA",
+      "referenceType" : "built-in"
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SwiftApplication.xcodeproj",
+      "identifier" : "0FABDEA52D710CAA00CCD748",
+      "name" : "SwiftApplication"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SwiftApplication.xcodeproj",
+        "identifier" : "0FABDEB52D710CAC00CCD748",
+        "name" : "SwiftApplicationTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SwiftApplication.xcodeproj",
+        "identifier" : "0FABDEBF2D710CAC00CCD748",
+        "name" : "SwiftApplicationUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
