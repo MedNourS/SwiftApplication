@@ -2,9 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDocumentTypes</key>
-	<array/>
-	<key>MKDirectionsApplicationSupportedModes</key>
-	<array/>
+    <key>CFBundleDocumentTypes</key>
+    <array/>
+    <key>MKDirectionsApplicationSupportedModes</key>
+    <array/>
+
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs your location to show you on the map while you are using the app.</string>
+
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>This app needs your location to provide features even when the app is in the background.</string>
+
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This app needs your location to provide features even when the app is in the background.</string>
+
 </dict>
 </plist>
